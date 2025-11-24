@@ -1,0 +1,28 @@
+# Problem Statement and Project Scope
+
+## Problem Statement
+Accurate and timely disease diagnosis is critical for effective patient management, especially for common yet potentially severe infections. The challenge is to leverage patient data—including demographics, reported symptoms, vital signs, and laboratory test results—to automatically and accurately predict the specific diagnosis among a set of common infectious diseases (e.g., COVID-19, Dengue, Influenza, Malaria, Pneumonia). [cite_start]A reliable automated system can assist healthcare professionals in preliminary screening and prioritizing diagnostic tests. 
+
+## Scope of the Project
+The project scope is strictly limited to developing and evaluating a **multi-class classification machine learning model** to predict one of the five diseases present in the synthetic dataset.
+
+### In Scope:
+* Data preprocessing, feature engineering (handling categorical features, scaling numerical features).
+* Training and hyperparameter tuning of a classification model (e.g., Random Forest, SVM).
+* Model evaluation using standard classification metrics (Accuracy, Precision, Recall, F1-score).
+* Creation of a predictive function to demonstrate the model's utility.
+
+### Out of Scope:
+* Deployment of the model as a live web application or mobile app.
+* Advanced clinical validation or integration with Electronic Health Records (EHR) systems.
+* Prediction of diseases not present in the provided dataset.
+
+## Target Users
+1.  [cite_start]**Clinicians/Doctors:** To serve as a quick, supplementary diagnostic aid in clinical settings. 
+2.  **Hospital Administrators:** To help in resource planning by anticipating potential outbreaks based on predicted diagnoses.
+3.  [cite_start]**Data Scientists:** As a benchmark for classification performance on medical datasets. 
+
+## High-Level Features
+1.  **Data Preprocessing Module:** Cleans and transforms raw CSV data into a format suitable for the ML model.
+2.  **Model Training Module:** Trains the optimal classification algorithm using 80% of the dataset.
+3.  **Prediction Interface Module:** Accepts new patient feature values and outputs the predicted disease and a confidence score.
